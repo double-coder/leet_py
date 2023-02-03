@@ -10,7 +10,8 @@ class LinkedList:
         current = self.head
         if current:
             while current.next:
-                current.next = new_node
+                current = current.next
+            current.next = new_node
         else:
             self.head = new_node
 

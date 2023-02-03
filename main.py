@@ -16,7 +16,9 @@ def main():
     bitops = flipbit.Solution
     bitops.minBitFlips(bitops, 10, 7)
     ll = createalinkedlist.LinkedList()
-    ll.head = createalinkedlist.Node(1)
+    Node = createalinkedlist.Node
+    ll.head = Node(1)
+    ll.append(Node(2))
     ll.printlist()
 if __name__ == '__main__':
     main()
