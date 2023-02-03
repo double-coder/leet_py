@@ -2,6 +2,7 @@ from binarysearch import finditem
 from twopointers import arraychan
 from arrayops import comparearr
 from stringops import flipbit
+from linkedlist import createalinkedlist
 
 def main():
     sample = [-4,-1,0,3,10]
@@ -14,6 +15,8 @@ def main():
     com.backspaceCompare(com, 'ab##', 'c#d#')
     bitops = flipbit.Solution
     bitops.minBitFlips(bitops, 10, 7)
-
+    ll = createalinkedlist.LinkedList()
+    ll.head = createalinkedlist.Node(1)
+    ll.printlist()
 if __name__ == '__main__':
     main()
