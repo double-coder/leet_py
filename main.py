@@ -3,6 +3,7 @@ from twopointers import arraychan
 from arrayops import comparearr
 from stringops import flipbit
 from linkedlist import createalinkedlist
+from bfsdfs import rottenoranges
 
 def main():
     # binary search
@@ -36,5 +37,11 @@ def main():
     ll.head = Node(1)
     ll.append(Node(2))
     ll.printlist()
+
+    """
+    
+    """
+    ro = rottenoranges.Solution
+    ro.orangesRotting(ro, [[2,1,1],[1,1,0],[0,1,1]])
 if __name__ == '__main__':
     main()
