@@ -1,7 +1,7 @@
 from binarysearch import finditem
 from twopointers import arraychan
-from arrayops import comparearr
-from stringops import flipbit
+from arrayops import comparearr, minele
+from stringops import flipbit, containcontones
 from linkedlist import createalinkedlist
 from bfsdfs import rottenoranges
 
@@ -22,6 +22,10 @@ def main():
     """
     com = comparearr.Solution
     com.backspaceCompare(com, 'ab##', 'c#d#')
+
+    # mine = minele.Solution
+    # mine.minElements(mine, [1,-10,9,1], 100, 0)
+
     """
     medium level question from leat code
     Q. how man bits we need to flip to get to target?
@@ -30,7 +34,8 @@ def main():
     """
     bitops = flipbit.Solution
     bitops.minBitFlips(bitops, 10, 7)
-
+    cones = containcontones.Solution
+    cones.checkOnesSegment(cones, '10')
     # linked list implementation
     ll = createalinkedlist.LinkedList()
     Node = createalinkedlist.Node
