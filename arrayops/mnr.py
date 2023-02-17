@@ -6,7 +6,7 @@ class Solution:
 
         for i, j in roads:
             dic[i].add(i)
-            dic[j].add(j)
+            dic[j].add(i)
 
         t = 0
         for i in range(n):
