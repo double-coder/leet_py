@@ -4,6 +4,7 @@ from arrayops import comparearr, minele
 from stringops import flipbit, containcontones
 from linkedlist import createalinkedlist
 from bfsdfs import rottenoranges
+from collections import defaultdict
 
 def main():
     # binary search
@@ -48,5 +49,12 @@ def main():
     """
     ro = rottenoranges.Solution
     ro.orangesRotting(ro, [[2,1,1],[1,1,0],[0,1,1]])
+
+    l = [[0,1],[0,3],[1,2],[1,3]]
+    dict1 = defaultdict(set)
+    for i,j in l:
+        dict1[i].add(i)
+        dict1[j].add(i)
+    print(dict1)
 if __name__ == '__main__':
     main()
